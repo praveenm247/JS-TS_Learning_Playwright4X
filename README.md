@@ -28,7 +28,7 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 |---|---|---|---|---|
 | 00 | Prompt Engineering | `00_Chapter_Prompt_Eng/` | ✅ Done | RICE-POT prompts, anti-hallucination rules, and the Selenium framework a prompt generated |
 | 01 | JavaScript Basics | `01_Chapter_JS_Basics/` | ✅ Done | Running a file with Node.js, `console.log`, and arithmetic expressions |
-| 02 | Keywords and Identifiers | `02_Chapter_JS_Keywords_Identifiers/` | 🟡 In progress | How the JavaScript engine runs code, `var`/`let`/`const`, identifier rules, naming conventions, and comments |
+| 02 | Keywords and Identifiers | `02_Chapter_JS_Keywords_Identifiers/` | ✅ Done | How the JavaScript engine runs code, `var`/`let`/`const`, identifier rules, naming conventions, comments, and deep-dive research |
 | 03 | Literals | `03_Chapter_JS_Literals/` | ⏳ Planned | Number, string, boolean, array, and object literals |
 
 ## Project Structure
@@ -47,7 +47,8 @@ JS-TS_Learning_Playwright4X/
 │   ├── 06_kw_ind_rules.js                 # Identifier rules
 │   ├── 07_ind_rules2.js                   # Naming conventions
 │   ├── 08_comments.js                     # JavaScript comment forms
-│   └── 09_interviewQuestions.js            # Identifier interview questions
+│   ├── 09_interviewQuestions.js           # Identifier interview questions
+│   └── 10_research_keyword_identifier.xlsx # Comprehensive keyword & identifier research
 └── 03_Chapter_JS_Literals/                # Planned
 ```
 
