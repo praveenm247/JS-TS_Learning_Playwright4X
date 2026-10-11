@@ -1,0 +1,1 @@
+let a = 10; //valid identifier - starts with a letter and 10 is a number literal

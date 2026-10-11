@@ -16,6 +16,8 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 - [Chapter 00: Prompt Engineering](#chapter-00-prompt-engineering)
 - [Chapter 01: JavaScript Basics](#chapter-01-javascript-basics)
 - [Chapter 02: Keywords and Identifiers](#chapter-02-keywords-and-identifiers)
+- [Chapter 03: Literals](#chapter-03-literals)
+- [Chapter 04: Operators](#chapter-04-operators)
 - [Coming Up](#coming-up)
 
 ## Roadmap
@@ -32,7 +34,8 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 | 00 | Prompt Engineering | `00_Chapter_Prompt_Eng/` | ✅ Done | RICE-POT prompts, anti-hallucination rules, and the Selenium framework a prompt generated |
 | 01 | JavaScript Basics | `01_Chapter_JS_Basics/` | ✅ Done | Running a file with Node.js, `console.log`, and arithmetic expressions |
 | 02 | Keywords and Identifiers | `02_Chapter_JS_Keywords_Identifiers/` | ✅ Done | How the JavaScript engine runs code, `var`/`let`/`const`, identifier rules, naming conventions, comments, and deep-dive research |
-| 03 | Literals | `03_Chapter_JS_Literals/` | ⏳ Planned | Number, string, boolean, array, and object literals |
+| 03 | Literals | `03_Chapter_JS_Literals/` | 🟡 In progress | Primitive and object literals, `null` vs `undefined`, number formats, `BigInt`, `Infinity`, and `NaN` |
+| 04 | Operators | `04_Chapter_JS_Operators/` | 🟡 In progress | Assignment, arithmetic, comparison, logical, and loose vs strict equality operators |
 
 ## Project Structure
 
@@ -52,7 +55,23 @@ JS-TS_Learning_Playwright4X/
 │   ├── 08_comments.js                     # JavaScript comment forms
 │   ├── 09_interviewQuestions.js           # Identifier interview questions
 │   └── 10_research_keyword_identifier.xlsx # Comprehensive keyword & identifier research
-└── 03_Chapter_JS_Literals/                # Planned
+├── 03_Chapter_JS_Literals/
+│   ├── 11_literal.js                      # Literal examples and types
+│   ├── 12_differentliterals.js            # Common JavaScript literal kinds
+│   ├── 13_null_undefined.js               # null and undefined
+│   ├── 14_null.js                         # null value example
+│   ├── 15_literalexample.js               # Literal declarations
+│   ├── 16_numberliteral.js                # Number literal formats
+│   ├── 17_numberliteralex.js              # Number, BigInt, and special values
+│   ├── 18_Specials.js                     # Special numeric values
+│   └── 19_undefined.js                    # undefined value example
+└── 04_Chapter_JS_Operators/
+    ├── 20_arch.js                         # Operator and operand introduction
+    ├── 21_assignment-op.js                # Assignment operators
+    ├── 22_arithmatic-op.js                # Arithmetic operators
+    ├── 23_comparison-op.js                # Comparison operators
+    ├── 24_logical-op.js                   # Logical operators
+    └── 25_confusing_comparsion.js         # Loose and strict equality examples
 ```
 
 ## Getting Started
@@ -295,8 +314,14 @@ let a1_b2 = "letters, digits, and underscore";
 // let my-name = "invalid";  // Hyphens are not allowed
 ```
 
+## Chapter 03: Literals
+
+The lessons in `03_Chapter_JS_Literals/` introduce JavaScript literal values, including strings, booleans, arrays, objects, `null`, and `undefined`. Number examples cover decimal, binary, octal, hexadecimal, exponential notation, numeric separators, `BigInt`, `Infinity`, and `NaN`.
+
+## Chapter 04: Operators
+
+The lessons in `04_Chapter_JS_Operators/` introduce assignment, arithmetic, comparison, and logical operators, with examples that show how loose (`==`) and strict (`===`) equality differ.
+
 ## Coming Up
 
-**Chapter 03: Literals** — number, string, boolean, array, and object literals.
-
-Then TypeScript, followed by Playwright.
+Continue with JavaScript fundamentals, then move on to TypeScript and Playwright automation.
