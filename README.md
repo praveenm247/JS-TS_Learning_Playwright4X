@@ -1,6 +1,9 @@
 # Learn JavaScript, TypeScript & Playwright (4x)
 
-JavaScript Node.js Prompt Engineering
+<img width="108" height="20" alt="image" src="https://github.com/user-attachments/assets/6626b701-688b-47c6-ac00-6439862bacdc" /> <img width="84" height="20" alt="image" src="https://github.com/user-attachments/assets/ea9ef5ef-5d45-421d-97b3-69063659f4ce" /> <img width="138" height="20" alt="image" src="https://github.com/user-attachments/assets/4a1383ad-2d60-4cec-b036-43e47d3a338d" />
+
+
+
 
 A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScript, and Playwright automation. Every chapter is a folder, and every lesson is a small file you can run on its own.
 
