@@ -1,0 +1,3 @@
+console.log(5 != "5")// This will log 'true' to the console because the number 5 is not equal to the string "5". In JavaScript, when using the != operator, type coercion occurs, and the string "5" is converted to the number 5. Since 5 is equal to 5, the result is false.
+console.log(5 !== "5")// This will log 'true' to the console because the number 5 is not strictly equal to the string "5". The !== operator checks for both value and type, and since the types are different (number vs string), the result is true.
+//console.log(5 !=== "5")//This line will throw a syntax error because !=== is not a valid operator in JavaScript. The correct operator for strict inequality is !==, which checks both value and type.

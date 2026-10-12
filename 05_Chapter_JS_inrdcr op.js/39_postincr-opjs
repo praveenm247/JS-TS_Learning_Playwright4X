@@ -1,0 +1,6 @@
+// Post Increment
+let a = 10;
+console.log(a);
+let b = a++; // Post Increment: b = 10, a = 11
+console.log(b);
+console.log(a);

@@ -1,5 +1,7 @@
 # Learn JavaScript, TypeScript & Playwright (4x)
 
+![Learn JavaScript, TypeScript, and Playwright](Assets-Images/banner.png)
+
 <img width="108" height="20" alt="image" src="https://github.com/user-attachments/assets/6626b701-688b-47c6-ac00-6439862bacdc" /> <img width="84" height="20" alt="image" src="https://github.com/user-attachments/assets/ea9ef5ef-5d45-421d-97b3-69063659f4ce" /> <img width="138" height="20" alt="image" src="https://github.com/user-attachments/assets/4a1383ad-2d60-4cec-b036-43e47d3a338d" />
 
 
@@ -18,6 +20,7 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 - [Chapter 02: Keywords and Identifiers](#chapter-02-keywords-and-identifiers)
 - [Chapter 03: Literals](#chapter-03-literals)
 - [Chapter 04: Operators](#chapter-04-operators)
+- [Chapter 05: Increment, Decrement, and Nullish Operators](#chapter-05-increment-decrement-and-nullish-operators)
 - [Coming Up](#coming-up)
 
 ## Roadmap
@@ -35,7 +38,8 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 | 01 | JavaScript Basics | `01_Chapter_JS_Basics/` | ✅ Done | Running a file with Node.js, `console.log`, and arithmetic expressions |
 | 02 | Keywords and Identifiers | `02_Chapter_JS_Keywords_Identifiers/` | ✅ Done | How the JavaScript engine runs code, `var`/`let`/`const`, identifier rules, naming conventions, comments, and deep-dive research |
 | 03 | Literals | `03_Chapter_JS_Literals/` | 🟡 In progress | Primitive and object literals, `null` vs `undefined`, number formats, `BigInt`, `Infinity`, and `NaN` |
-| 04 | Operators | `04_Chapter_JS_Operators/` | 🟡 In progress | Assignment, arithmetic, comparison, logical, and loose vs strict equality operators |
+| 04 | Operators | `04_Chapter_JS_Operators/` | 🟡 In progress | Assignment, arithmetic, comparison, logical, string, ternary, and `typeof` operators |
+| 05 | Increment, Decrement, and Nullish Operators | `05_Chapter_JS_inrdcr op.js/` | 🟡 In progress | Prefix and postfix increment/decrement, mixed expressions, and nullish coalescing (`??`) |
 
 ## Project Structure
 
@@ -65,13 +69,45 @@ JS-TS_Learning_Playwright4X/
 │   ├── 17_numberliteralex.js              # Number, BigInt, and special values
 │   ├── 18_Specials.js                     # Special numeric values
 │   └── 19_undefined.js                    # undefined value example
-└── 04_Chapter_JS_Operators/
+├── 04_Chapter_JS_Operators/
     ├── 20_arch.js                         # Operator and operand introduction
     ├── 21_assignment-op.js                # Assignment operators
     ├── 22_arithmatic-op.js                # Arithmetic operators
     ├── 23_comparison-op.js                # Comparison operators
     ├── 24_logical-op.js                   # Logical operators
-    └── 25_confusing_comparsion.js         # Loose and strict equality examples
+    ├── 25_confusing_comparsion.js         # Loose and strict equality examples
+    ├── 26_questions.js                    # Operator practice questions
+    ├── 27_string-op.js                    # String concatenation
+    ├── 28_ternary-op.js                   # Ternary operator basics
+    ├── 29_ternary-op_use.js               # Ternary operator examples
+    ├── 30_ternary-op_iq.js                # Ternary interview exercise
+    ├── 31_ternary-op_iq1.js               # Ternary interview exercise
+    ├── 32_ternary-op_templiteral.js       # Ternary operators and template literals
+    ├── 33_ternary-op_bool.js              # Boolean ternary example
+    ├── 34_ternary-op_nested.js            # Nested ternary examples
+    ├── 35_ternary-op_nestediq.js          # Nested ternary interview exercise
+    ├── 36_ternary-op_nested3.js           # Nested ternary example
+    └── 37_typeof.js                       # typeof operator
+├── 05_Chapter_JS_inrdcr op.js/
+│   ├── 38_preincr-op.js                   # Prefix increment
+│   ├── 39_postincr-opjs                   # Postfix increment
+│   ├── 40_preincrarithmatic-op.js         # Prefix increment in arithmetic
+│   ├── 41_prepostincrarith-op.js          # Prefix and postfix arithmetic
+│   ├── 42_prepostincrement.js             # Prefix and postfix comparison
+│   ├── 43_predecre-op.js                  # Prefix decrement
+│   ├── 44_postdecre-op.js                 # Postfix decrement
+│   └── 45_nullish-op.js                   # Nullish coalescing operator
+├── Assets-Images/
+│   ├── banner.png
+│   ├── ch00-rice-pot.png
+│   ├── ch01-node-runs-file.png
+│   ├── ch02-declaration-anatomy.png
+│   ├── ch03-null-vs-undefined.png
+│   ├── ch04-loose-vs-strict.png
+│   ├── ch04-ternary.png
+│   └── ch05-pre-vs-post.png
+└── Tasks/
+    └── operators_tasks.js                # Operator practice tasks
 ```
 
 ## Getting Started
@@ -118,7 +154,11 @@ Constraints:
 
 The supplied learning outline describes a generated Selenium framework in this chapter. The `00_Chapter_Prompt_Eng/` folder is currently empty in this checkout.
 
+![RICE-POT prompt structure](Assets-Images/ch00-rice-pot.png)
+
 ## Chapter 01: JavaScript Basics
+
+![How Node.js runs a JavaScript file](Assets-Images/ch01-node-runs-file.png)
 
 ### 01: Hello World
 
@@ -173,6 +213,8 @@ console.log("Modulus: " + (5 % 3));
 | `**` | Exponentiation | `2 ** 3` | `8` |
 
 ## Chapter 02: Keywords and Identifiers
+
+![JavaScript declaration anatomy](Assets-Images/ch02-declaration-anatomy.png)
 
 ### 03: The JavaScript Engine
 
@@ -318,9 +360,21 @@ let a1_b2 = "letters, digits, and underscore";
 
 The lessons in `03_Chapter_JS_Literals/` introduce JavaScript literal values, including strings, booleans, arrays, objects, `null`, and `undefined`. Number examples cover decimal, binary, octal, hexadecimal, exponential notation, numeric separators, `BigInt`, `Infinity`, and `NaN`.
 
+![The difference between undefined and null](Assets-Images/ch03-null-vs-undefined.png)
+
 ## Chapter 04: Operators
 
-The lessons in `04_Chapter_JS_Operators/` introduce assignment, arithmetic, comparison, and logical operators, with examples that show how loose (`==`) and strict (`===`) equality differ.
+The lessons in `04_Chapter_JS_Operators/` introduce assignment, arithmetic, comparison, logical, string, and ternary operators, plus the `typeof` operator. The examples compare loose (`==`) and strict (`===`) equality.
+
+![Loose and strict equality](Assets-Images/ch04-loose-vs-strict.png)
+
+![Ternary operator decision flow](Assets-Images/ch04-ternary.png)
+
+## Chapter 05: Increment, Decrement, and Nullish Operators
+
+The lessons in `05_Chapter_JS_inrdcr op.js/` cover prefix and postfix increment/decrement, their results inside expressions, and nullish coalescing with `??`.
+
+![Prefix and postfix increment](Assets-Images/ch05-pre-vs-post.png)
 
 ## Coming Up
 
