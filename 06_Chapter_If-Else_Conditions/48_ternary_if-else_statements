@@ -1,0 +1,17 @@
+let age = 27;
+
+let result = age > 21 ? "Drive": "No Able to DRIve";
+console.log("Ternary result: " + result);
+
+if(age > 21)
+{
+    console.log("If result: ");
+    console.log("Drive");
+    console.log("Drink");
+    console.log("Go goa");
+}
+else
+{
+    console.log("Else result: ");
+    console.log("No Able to DRIve");
+}

@@ -21,6 +21,9 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 - [Chapter 03: Literals](#chapter-03-literals)
 - [Chapter 04: Operators](#chapter-04-operators)
 - [Chapter 05: Increment, Decrement, and Nullish Operators](#chapter-05-increment-decrement-and-nullish-operators)
+- [Chapter 06: If-Else Conditions](#chapter-06-if-else-conditions)
+- [Chapter 07: Switch Statement](#chapter-07-switch-statement)
+- [Chapter 08: User Input](#chapter-08-user-input)
 - [Coming Up](#coming-up)
 
 ## Roadmap
@@ -37,9 +40,12 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 | 00 | Prompt Engineering | `00_Chapter_Prompt_Eng/` | ✅ Done | RICE-POT prompts, anti-hallucination rules, and the Selenium framework a prompt generated |
 | 01 | JavaScript Basics | `01_Chapter_JS_Basics/` | ✅ Done | Running a file with Node.js, `console.log`, and arithmetic expressions |
 | 02 | Keywords and Identifiers | `02_Chapter_JS_Keywords_Identifiers/` | ✅ Done | How the JavaScript engine runs code, `var`/`let`/`const`, identifier rules, naming conventions, comments, and deep-dive research |
-| 03 | Literals | `03_Chapter_JS_Literals/` | 🟡 In progress | Primitive and object literals, `null` vs `undefined`, number formats, `BigInt`, `Infinity`, and `NaN` |
-| 04 | Operators | `04_Chapter_JS_Operators/` | 🟡 In progress | Assignment, arithmetic, comparison, logical, string, ternary, and `typeof` operators |
-| 05 | Increment, Decrement, and Nullish Operators | `05_Chapter_JS_inrdcr op.js/` | 🟡 In progress | Prefix and postfix increment/decrement, mixed expressions, and nullish coalescing (`??`) |
+| 03 | Literals | `03_Chapter_JS_Literals/` | ✅ Done | Primitive and object literals, `null` vs `undefined`, number formats, `BigInt`, `Infinity`, and `NaN` |
+| 04 | Operators | `04_Chapter_JS_Operators/` | ✅ Done | Assignment, arithmetic, comparison, logical, string, ternary, and `typeof` operators |
+| 05 | Increment, Decrement, and Nullish Operators | `05_Chapter_JS_inrdcr_Operators/` | ✅ Done | Prefix and postfix increment/decrement, mixed expressions, and nullish coalescing (`??`) |
+| 06 | If-Else Conditions | `06_Chapter_If-Else_Conditions/` | 🟡 In progress | Conditional statements, `if-else`, nested conditionals, and multiple `else if` ladders |
+| 07 | Switch Statement | `07_Chapter_Switch_Statement/` | 🟡 In progress | `switch-case` syntax, break statements, grouped cases, API status code handling, and interview questions |
+| 08 | User Input | `08_Chapter_UserInput/` | 🟡 In progress | Reading user input with `prompt-sync`, readline, process args, and file input with `fs` |
 
 ## Project Structure
 
@@ -88,7 +94,7 @@ JS-TS_Learning_Playwright4X/
     ├── 35_ternary-op_nestediq.js          # Nested ternary interview exercise
     ├── 36_ternary-op_nested3.js           # Nested ternary example
     └── 37_typeof.js                       # typeof operator
-├── 05_Chapter_JS_inrdcr op.js/
+├── 05_Chapter_JS_inrdcr_Operators/
 │   ├── 38_preincr-op.js                   # Prefix increment
 │   ├── 39_postincr-opjs                   # Postfix increment
 │   ├── 40_preincrarithmatic-op.js         # Prefix increment in arithmetic
@@ -97,6 +103,26 @@ JS-TS_Learning_Playwright4X/
 │   ├── 43_predecre-op.js                  # Prefix decrement
 │   ├── 44_postdecre-op.js                 # Postfix decrement
 │   └── 45_nullish-op.js                   # Nullish coalescing operator
+├── 06_Chapter_If-Else_Conditions/
+│   ├── 46_if-else_statement.js            # Basic if-else statement
+│   ├── 47_nested_if-else_statement        # Nested if-else condition
+│   ├── 48_ternary_if-else_statements      # Ternary comparison with if-else
+│   └── 49_multiple_if-else.js             # Multiple else-if conditions ladder
+├── 07_Chapter_Switch_Statement/
+│   ├── 50_swithch_case.js                 # Basic switch-case statement
+│   ├── 51_iq_swithch.js                   # Switch case interview exercise
+│   ├── 52_iq1_switch.js                   # Switch case expression evaluation
+│   ├── 53_api_swithch.js                  # Switch for API status code handling
+│   ├── 54_swithc_group.js                 # Grouped switch cases
+│   ├── 55_switch_iq.js                    # Strict matching in switch
+│   ├── 56_switch_iq1                     # Switch case logic quiz
+│   ├── 57_switch_iq2.js                   # Default placement in switch
+│   └── 58_swith_iq3.js                   # Advanced switch interview questions
+├── 08_Chapter_UserInput/
+│   ├── 59_userinput.js                    # Process arguments user input
+│   ├── 60_node_userinput.js               # Node.js readline user input
+│   ├── 61_prompt_sync.js                  # Synchronous prompt input
+│   └── 62_fs_readfile.js                  # File reading user input
 ├── Assets-Images/
 │   ├── banner.png
 │   ├── ch00-rice-pot.png
@@ -105,7 +131,10 @@ JS-TS_Learning_Playwright4X/
 │   ├── ch03-null-vs-undefined.png
 │   ├── ch04-loose-vs-strict.png
 │   ├── ch04-ternary.png
-│   └── ch05-pre-vs-post.png
+│   ├── ch05-pre-vs-post.png
+│   ├── ch06-else-if-ladder.png
+│   ├── ch07-switch-break.png
+│   └── ch08-user-input.png
 └── Tasks/
     └── operators_tasks.js                # Operator practice tasks
 ```
@@ -372,9 +401,27 @@ The lessons in `04_Chapter_JS_Operators/` introduce assignment, arithmetic, comp
 
 ## Chapter 05: Increment, Decrement, and Nullish Operators
 
-The lessons in `05_Chapter_JS_inrdcr op.js/` cover prefix and postfix increment/decrement, their results inside expressions, and nullish coalescing with `??`.
+The lessons in `05_Chapter_JS_inrdcr_Operators/` cover prefix and postfix increment/decrement, their results inside expressions, and nullish coalescing with `??`.
 
 ![Prefix and postfix increment](Assets-Images/ch05-pre-vs-post.png)
+
+## Chapter 06: If-Else Conditions
+
+The lessons in `06_Chapter_If-Else_Conditions/` introduce branching logic with `if`, `else`, nested conditions, and multiple `else if` ladders.
+
+![If-Else ladder flow](Assets-Images/ch06-else-if-ladder.png)
+
+## Chapter 07: Switch Statement
+
+The lessons in `07_Chapter_Switch_Statement/` cover multi-way decision-making using `switch-case`, `break` controls, default fallbacks, grouped cases, and real-world API status code routing.
+
+![Switch case flow and break](Assets-Images/ch07-switch-break.png)
+
+## Chapter 08: User Input
+
+The lessons in `08_Chapter_UserInput/` cover receiving user inputs in Node.js applications via command line arguments (`process.argv`), readline interface, synchronous prompt library (`prompt-sync`), and reading configuration files via Node `fs` module.
+
+![User input methods in Node.js](Assets-Images/ch08-user-input.png)
 
 ## Coming Up
 
