@@ -1,0 +1,23 @@
+{
+  "name": "js-ts_learning_playwright4x",
+  "version": "1.0.0",
+  "description": "![Learn JavaScript, TypeScript, and Playwright](Assets-Images/banner.png)",
+  "homepage": "https://github.com/praveenm247/JS-TS_Learning_Playwright4X#readme",
+  "bugs": {
+    "url": "https://github.com/praveenm247/JS-TS_Learning_Playwright4X/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praveenm247/JS-TS_Learning_Playwright4X.git"
+  },
+  "license": "(ISC)",
+  "author": "Praveen Madiwalar",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

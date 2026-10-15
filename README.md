@@ -52,6 +52,9 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 ```text
 JS-TS_Learning_Playwright4X/
 ├── README.md
+├── package.json                          # Project metadata and prompt-sync dependency
+├── package-lock.json                     # Locked npm dependency versions
+├── .gitignore                             # Excludes installed dependencies
 ├── 00_Chapter_Prompt_Eng/                 # Prompt Engineering chapter folder
 ├── 01_Chapter_JS_Basics/
 │   ├── 01_helloworld.js                   # First program: console.log
@@ -136,21 +139,24 @@ JS-TS_Learning_Playwright4X/
 │   ├── ch07-switch-break.png
 │   └── ch08-user-input.png
 └── Tasks/
+    ├── hello_task_14-10.js                # Multiplication table practice task
     └── operators_tasks.js                # Operator practice tasks
 ```
 
 ## Getting Started
 
-Install Node.js 18 or newer. No npm install is needed for the current examples.
+Install Node.js 18 or newer, then install the project dependency used by the `prompt-sync` lesson:
 
 ```sh
 git clone https://github.com/praveenm247/JS-TS_Learning_Playwright4X.git
 cd JS-TS_Learning_Playwright4X
+npm install
 node --version
 node 01_Chapter_JS_Basics/01_helloworld.js
 ```
 
 Run any lesson with `node <chapter-folder>/<file>.js` from the repository root.
+The `08_Chapter_UserInput/61_prompt_sync.js` lesson requires the installed `prompt-sync` package.
 
 ## Chapter 00: Prompt Engineering
 
