@@ -24,6 +24,7 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 - [Chapter 06: If-Else Conditions](#chapter-06-if-else-conditions)
 - [Chapter 07: Switch Statement](#chapter-07-switch-statement)
 - [Chapter 08: User Input](#chapter-08-user-input)
+- [Practice Tasks](#practice-tasks)
 - [Coming Up](#coming-up)
 
 ## Roadmap
@@ -139,7 +140,11 @@ JS-TS_Learning_Playwright4X/
 │   ├── ch07-switch-break.png
 │   └── ch08-user-input.png
 └── Tasks/
-    ├── hello_task_14-10.js                # Multiplication table practice task
+    ├── fizz_buzz_14-10.js                 # FizzBuzz exercise
+    ├── grade_calculator_14-10.js          # Grade calculator using switch
+    ├── hello_14-10.js                     # Hello World exercise
+    ├── inputfromusers_14-10.js            # Read text from standard input
+    ├── multiple-tables_14-10.js           # Multiplication table using prompt-sync
     └── operators_tasks.js                # Operator practice tasks
 ```
 
@@ -428,6 +433,10 @@ The lessons in `07_Chapter_Switch_Statement/` cover multi-way decision-making us
 The lessons in `08_Chapter_UserInput/` cover receiving user inputs in Node.js applications via command line arguments (`process.argv`), readline interface, synchronous prompt library (`prompt-sync`), and reading configuration files via Node `fs` module.
 
 ![User input methods in Node.js](Assets-Images/ch08-user-input.png)
+
+## Practice Tasks
+
+The `Tasks/` folder contains short exercises for basic output, user input, multiplication tables, FizzBuzz, grades, and operators. Run a task from the repository root with `node Tasks/<file>.js`. The multiplication table task uses the installed `prompt-sync` dependency.
 
 ## Coming Up
 
