@@ -171,7 +171,8 @@ JS-TS_Learning_Playwright4X/
     ├── multiple-tables_14-10.js            # Multiplication table exercise
     ├── fizz_buzz_14-10.js                  # FizzBuzz exercise
     ├── grade_calculator_14-10.js           # Grade calculator using switch
-    └── operators_tasks.js                  # Operator practice tasks
+    ├── operators_tasks.js                  # Operator practice tasks
+    └── triangle_classifier_16-10.js        # Classify a triangle from its side lengths
 ```
 
 ## Getting Started
@@ -480,7 +481,7 @@ The lessons in `11_Chapter_DoWhile/` show `do...while` loops, which execute the 
 
 ## Practice Tasks
 
-The `Tasks/` folder contains short exercises for output, user input, multiplication tables, FizzBuzz, grade calculation, and operators. Run a task from the repository root with `node Tasks/<file>.js`. The multiplication table task uses the installed `prompt-sync` dependency.
+The `Tasks/` folder contains short exercises for output, user input, multiplication tables, FizzBuzz, grade calculation, operators, and triangle classification. Run a task from the repository root with `node Tasks/<file>.js`. The multiplication table and triangle tasks use the installed `prompt-sync` dependency.
 
 ## Coming Up
 

@@ -26,7 +26,7 @@ function gradeCalculator(score) {
   }
 }
 
-  const n = 59; //require('fs').readFileSync(0, 'utf8');
+  const n = require('fs').readFileSync(0, 'utf8');
   console.log("Your grade is: ", gradeCalculator(Number(n)))
 
 
