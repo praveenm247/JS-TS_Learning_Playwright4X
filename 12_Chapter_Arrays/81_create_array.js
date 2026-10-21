@@ -16,3 +16,4 @@ console.log("_____________________________________________");
 //Array.from string
 let arr3 = Array.from("Praveen");
 console.log("Values of arr3: ", arr3); //result: ['P', 'r', 'a', 'v',  'e', 'e', 'n']
+console.log("_____________________________________________");

@@ -27,6 +27,7 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 - [Chapter 09: For Loops](#chapter-09-for-loops)
 - [Chapter 10: While Loops](#chapter-10-while-loops)
 - [Chapter 11: Do-While Loops](#chapter-11-do-while-loops)
+- [Chapter 12: Arrays](#chapter-12-arrays)
 - [Practice Tasks](#practice-tasks)
 - [Coming Up](#coming-up)
 
@@ -53,6 +54,7 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 | 09 | For Loops | `09_Chapter_Loops/` | 🟡 In progress | `for` loop structure, iteration, and practice questions |
 | 10 | While Loops | `10_Chapter_Loops_While/` | 🟡 In progress | `while` loop structure, condition checks, and practice questions |
 | 11 | Do-While Loops | `11_Chapter_DoWhile/` | 🟡 In progress | `do...while`, running a loop body before checking its condition, and nested loops |
+| 12 | Arrays | `12_Chapter_Arrays/` | 🟡 In progress | Creating, accessing, changing, searching, sorting, and iterating arrays; `map()` and `filter()` |
 
 ## Project Structure
 
@@ -150,6 +152,19 @@ JS-TS_Learning_Playwright4X/
 │   ├── 74_dowhile_iq1.js                   # Do-while exercise
 │   ├── 75_nestedfor.js                     # Nested for loops
 │   └── 76_forloop_iq2.js                   # Loop exercise
+├── 12_Chapter_Arrays/
+│   ├── 77_arrays.js                        # Array indexing and length
+│   ├── 78_arrays.js                        # Array values and access
+│   ├── 79_arrays.js                        # Array examples
+│   ├── 80_arrays.js                        # Array examples
+│   ├── 81_create_array.js                  # Create arrays in several ways
+│   ├── 82_accessmodify_arrays.js           # Access and modify elements
+│   ├── 83_add-remove_array.js              # Add and remove elements
+│   ├── 84_arrays.js                        # Array references and copies
+│   ├── 85_searching_array.js               # Search array values
+│   ├── 86_findelement_array.js             # find and findIndex methods
+│   ├── 87_iterate_array.js                 # Iterate and transform arrays
+│   └── 88_trans_array.js                   # map and filter transformations
 ├── Assets-Images/
 │   ├── banner.png
 │   ├── ch00-rice-pot.png
@@ -164,7 +179,12 @@ JS-TS_Learning_Playwright4X/
 │   ├── ch08-user-input.png
 │   ├── ch09-for-loop-anatomy.png
 │   ├── ch10-while-loop.png
-│   └── ch11-while-vs-do-while.png
+│   ├── ch11-while-vs-do-while.png
+│   ├── ch12-array-add-remove.png
+│   ├── ch12-copy-vs-reference.png
+│   ├── ch12-map-vs-filter.png
+│   ├── ch12-sort-text-vs-numbers.png
+│   └── JavaScript map vs filter Infographic.png
 └── Tasks/
     ├── hello_14-10.js                     # Hello World exercise
     ├── inputfromusers_14-10.js             # Read text from standard input
@@ -172,7 +192,15 @@ JS-TS_Learning_Playwright4X/
     ├── fizz_buzz_14-10.js                  # FizzBuzz exercise
     ├── grade_calculator_14-10.js           # Grade calculator using switch
     ├── operators_tasks.js                  # Operator practice tasks
-    └── triangle_classifier_16-10.js        # Classify a triangle from its side lengths
+    ├── triangle_classifier_16-10.js        # Classify a triangle from its side lengths
+    ├── Array_Duplicate_Elements_21-10.js   # Find duplicate array elements
+    ├── Find_Maximum_in_Array_21-10.js      # Find the maximum array value
+    ├── Frequency_of_ArrayElements_21-10.js # Count array element frequency
+    ├── Reverse_Array_21-10.js              # Reverse an array
+    ├── SmallestElement_Array_21-10.js      # Find the smallest array value
+    ├── SumofArrayElements_21-10.js         # Sum array elements
+    ├── mapvsfilter_19-10.js                # Compare map and filter methods
+    └── JavaScript map vs filter Infographic_Task 19-10-2026.png # Map/filter exercise prompt
 ```
 
 ## Getting Started
@@ -479,9 +507,23 @@ The lessons in `11_Chapter_DoWhile/` show `do...while` loops, which execute the 
 
 ![While and do-while comparison](Assets-Images/ch11-while-vs-do-while.png)
 
+## Chapter 12: Arrays
+
+The lessons in `12_Chapter_Arrays/` cover array creation, indexing, length, modifying values, adding and removing elements, searching, iteration, sorting, and transformations with `map()` and `filter()`. They also illustrate how array copies differ from shared references.
+
+![Add and remove array elements](Assets-Images/ch12-array-add-remove.png)
+
+![Array copies and references](Assets-Images/ch12-copy-vs-reference.png)
+
+![Array map and filter methods](Assets-Images/ch12-map-vs-filter.png)
+
+![Sorting strings and numbers](Assets-Images/ch12-sort-text-vs-numbers.png)
+
+![JavaScript map and filter comparison infographic](Assets-Images/JavaScript%20map%20vs%20filter%20Infographic.png)
+
 ## Practice Tasks
 
-The `Tasks/` folder contains short exercises for output, user input, multiplication tables, FizzBuzz, grade calculation, operators, and triangle classification. Run a task from the repository root with `node Tasks/<file>.js`. The multiplication table and triangle tasks use the installed `prompt-sync` dependency.
+The `Tasks/` folder contains short exercises for output, user input, multiplication tables, FizzBuzz, grade calculation, operators, triangle classification, and array operations. It also contains a map/filter exercise prompt. Run a JavaScript task from the repository root with `node Tasks/<file>.js`. The multiplication table and triangle tasks use the installed `prompt-sync` dependency.
 
 ## Coming Up
 

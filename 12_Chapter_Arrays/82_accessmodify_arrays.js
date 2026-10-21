@@ -6,3 +6,4 @@ console.log("_____________________________________________");
 //Modify array
 result[2] = "Block"; //modify value of result[2] "Blocked" to "Block"
 console.log(result[2]);
+console.log("_____________________________________________");
