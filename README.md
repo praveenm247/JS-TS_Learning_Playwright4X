@@ -45,16 +45,16 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 | 00 | Prompt Engineering | `00_Chapter_Prompt_Eng/` | ✅ Done | RICE-POT prompts, anti-hallucination rules, and the Selenium framework a prompt generated |
 | 01 | JavaScript Basics | `01_Chapter_JS_Basics/` | ✅ Done | Running a file with Node.js, `console.log`, and arithmetic expressions |
 | 02 | Keywords and Identifiers | `02_Chapter_JS_Keywords_Identifiers/` | ✅ Done | How the JavaScript engine runs code, `var`/`let`/`const`, identifier rules, naming conventions, comments, and deep-dive research |
-| 03 | Literals | `03_Chapter_JS_Literals/` | 🟡 In progress | Primitive and object literals, `null` vs `undefined`, number formats, `BigInt`, `Infinity`, and `NaN` |
-| 04 | Operators | `04_Chapter_JS_Operators/` | 🟡 In progress | Assignment, arithmetic, comparison, logical, string, ternary, and `typeof` operators |
-| 05 | Increment, Decrement, and Nullish Operators | `05_Chapter_JS_inrdcr_Operators/` | 🟡 In progress | Prefix and postfix increment/decrement, mixed expressions, and nullish coalescing (`??`) |
-| 06 | If-Else Conditions | `06_Chapter_If-Else_Conditions/` | 🟡 In progress | `if`, `else`, nested conditions, ternary expressions, and `else if` ladders |
-| 07 | Switch Statement | `07_Chapter_Switch_Statement/` | 🟡 In progress | `switch`, `case`, `break`, grouped cases, and API status code handling |
-| 08 | User Input | `08_Chapter_UserInput/` | 🟡 In progress | Command line arguments, readline, `prompt-sync`, and file input |
-| 09 | For Loops | `09_Chapter_Loops/` | 🟡 In progress | `for` loop structure, iteration, and practice questions |
-| 10 | While Loops | `10_Chapter_Loops_While/` | 🟡 In progress | `while` loop structure, condition checks, and practice questions |
-| 11 | Do-While Loops | `11_Chapter_DoWhile/` | 🟡 In progress | `do...while`, running a loop body before checking its condition, and nested loops |
-| 12 | Arrays | `12_Chapter_Arrays/` | 🟡 In progress | Creating, accessing, changing, searching, sorting, and iterating arrays; `map()` and `filter()` |
+| 03 | Literals | `03_Chapter_JS_Literals/` | ✅ Done | Primitive and object literals, `null` vs `undefined`, number formats, `BigInt`, `Infinity`, and `NaN` |
+| 04 | Operators | `04_Chapter_JS_Operators/` | ✅ Done | Assignment, arithmetic, comparison, logical, string, ternary, and `typeof` operators |
+| 05 | Increment, Decrement, and Nullish Operators | `05_Chapter_JS_inrdcr_Operators/` | ✅ Done | Prefix and postfix increment/decrement, mixed expressions, and nullish coalescing (`??`) |
+| 06 | If-Else Conditions | `06_Chapter_If-Else_Conditions/` | ✅ Done | `if`, `else`, nested conditions, ternary expressions, and `else if` ladders |
+| 07 | Switch Statement | `07_Chapter_Switch_Statement/` | ✅ Done | `switch`, `case`, `break`, grouped cases, and API status code handling |
+| 08 | User Input | `08_Chapter_UserInput/` | ✅ Done | Command line arguments, readline, `prompt-sync`, and file input |
+| 09 | For Loops | `09_Chapter_Loops/` | ✅ Done | `for` loop structure, iteration, and practice questions |
+| 10 | While Loops | `10_Chapter_Loops_While/` | ✅ Done | `while` loop structure, condition checks, and practice questions |
+| 11 | Do-While Loops | `11_Chapter_DoWhile/` | ✅ Done | `do...while`, running a loop body before checking its condition, and nested loops |
+| 12 | Arrays | `12_Chapter_Arrays/` | ✅ Done | Creating, accessing, changing, searching, sorting, and iterating arrays; `map()` and `filter()` |
 
 ## Project Structure
 
