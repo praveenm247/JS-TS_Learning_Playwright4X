@@ -13,6 +13,8 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 
 - [Roadmap](#roadmap)
 - [Chapter Summary](#chapter-summary)
+- [Chapter Flow and Quick Examples](#chapter-flow-and-quick-examples)
+- [Image Syntax](#image-syntax)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [Chapter 00: Prompt Engineering](#chapter-00-prompt-engineering)
@@ -55,6 +57,167 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 | 10 | While Loops | `10_Chapter_Loops_While/` | ✅ Done | `while` loop structure, condition checks, and practice questions |
 | 11 | Do-While Loops | `11_Chapter_DoWhile/` | ✅ Done | `do...while`, running a loop body before checking its condition, and nested loops |
 | 12 | Arrays | `12_Chapter_Arrays/` | ✅ Done | Creating, accessing, changing, searching, sorting, and iterating arrays; `map()` and `filter()` |
+
+## Chapter Flow and Quick Examples
+
+The chapters build from writing clear prompts to using JavaScript data and control flow. TypeScript and Playwright are the next stages of the roadmap.
+
+```mermaid
+flowchart LR
+    C00["00 Prompt Engineering"] --> C01["01 JavaScript Basics"]
+    C01 --> C02["02 Keywords and Identifiers"]
+    C02 --> C03["03 Literals"]
+    C03 --> C04["04 Operators"]
+    C04 --> C05["05 Increment, Decrement, and Nullish"]
+    C05 --> C06["06 If-Else Conditions"]
+    C06 --> C07["07 Switch Statement"]
+    C07 --> C08["08 User Input"]
+    C08 --> C09["09 For Loops"]
+    C09 --> C10["10 While Loops"]
+    C10 --> C11["11 Do-While Loops"]
+    C11 --> C12["12 Arrays"]
+    C12 --> TS[TypeScript]
+    TS --> PW[Playwright]
+```
+
+Each snippet is a small example of the chapter's main idea.
+
+### Chapter 00: Prompt Engineering
+
+```text
+Role: QA engineer
+Task: Create a login test plan
+Format: List preconditions, steps, and expected results
+```
+
+A structured prompt makes the requested test output clearer and easier to review.
+
+### Chapter 01: JavaScript Basics
+
+```js
+console.log("Hello, JavaScript!");
+console.log(4 + 3);
+```
+
+Run a JavaScript file with Node.js and use `console.log` to display values.
+
+### Chapter 02: Keywords and Identifiers
+
+```js
+const testName = "login";
+let attemptCount = 1;
+```
+
+Use keywords such as `const` and `let` to declare variables with readable identifiers.
+
+### Chapter 03: Literals
+
+```js
+const testCase = { name: "login", passed: true };
+const attempts = [1, 2, 3];
+```
+
+Literals directly describe values such as strings, booleans, objects, and arrays.
+
+### Chapter 04: Operators
+
+```js
+const total = 2 + 3;
+const passed = total === 5;
+```
+
+Operators calculate values and compare them to produce a result.
+
+### Chapter 05: Increment, Decrement, and Nullish Operators
+
+```js
+let attempt = 0;
+attempt++;
+const displayName = undefined ?? "Guest";
+```
+
+Increment operators update a number, while `??` supplies a fallback for `null` or `undefined`.
+
+### Chapter 06: If-Else Conditions
+
+```js
+const score = 82;
+if (score >= 70) console.log("Pass");
+else console.log("Review");
+```
+
+An `if...else` statement chooses what to do based on a condition.
+
+### Chapter 07: Switch Statement
+
+```js
+const status = 404;
+switch (status) {
+  case 200: console.log("OK"); break;
+  case 404: console.log("Not found"); break;
+  default: console.log("Other status");
+}
+```
+
+Use `switch` to select a branch from several matching values.
+
+### Chapter 08: User Input
+
+```js
+const name = process.argv[2] ?? "Guest";
+console.log(`Hello, ${name}`);
+```
+
+Node.js exposes command-line arguments through `process.argv` for simple input.
+
+### Chapter 09: For Loops
+
+```js
+for (let step = 1; step <= 3; step++) {
+  console.log(`Step ${step}`);
+}
+```
+
+A `for` loop repeats work when the iteration setup and stopping condition are known.
+
+### Chapter 10: While Loops
+
+```js
+let retries = 0;
+while (retries < 3) {
+  retries++;
+}
+```
+
+A `while` loop repeats as long as its condition remains true.
+
+### Chapter 11: Do-While Loops
+
+```js
+let menuChoice;
+do {
+  menuChoice = "run once";
+} while (menuChoice === "again");
+```
+
+A `do...while` loop runs its body once before it checks the condition.
+
+### Chapter 12: Arrays
+
+```js
+const scores = [45, 82, 91];
+const passingScores = scores.filter((score) => score >= 70);
+```
+
+Arrays store ordered collections, and methods such as `filter` can select matching items.
+
+## Image Syntax
+
+Use Markdown image syntax with descriptive alt text and a path relative to the repository:
+
+```md
+![Short description of the image](Assets-Images/banner.png)
+```
 
 ## Project Structure
 
