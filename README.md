@@ -30,6 +30,7 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 - [Chapter 10: While Loops](#chapter-10-while-loops)
 - [Chapter 11: Do-While Loops](#chapter-11-do-while-loops)
 - [Chapter 12: Arrays](#chapter-12-arrays)
+- [Chapter 13: Functions](#chapter-13-functions)
 - [Practice Tasks](#practice-tasks)
 - [Coming Up](#coming-up)
 
@@ -76,7 +77,8 @@ flowchart LR
     C09 --> C10["10 While Loops"]
     C10 --> C11["11 Do-While Loops"]
     C11 --> C12["12 Arrays"]
-    C12 --> TS[TypeScript]
+    C12 --> C13["13 Functions"]
+    C13 --> TS[TypeScript]
     TS --> PW[Playwright]
 ```
 
@@ -210,6 +212,18 @@ const passingScores = scores.filter((score) => score >= 70);
 ```
 
 Arrays store ordered collections, and methods such as `filter` can select matching items.
+
+### Chapter 13: Functions
+
+```js
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+console.log(greet("QA"));
+```
+
+Functions package reusable steps, accept inputs, and can return a result.
 
 ## Image Syntax
 
@@ -474,6 +488,10 @@ console.log("Modulus: " + (5 % 3));
 
 ![JavaScript declaration anatomy](Assets-Images/ch02-declaration-anatomy.png)
 
+![JavaScript data types](Assets-Images/ch02-data%20types.png)
+
+![Variable scope with var and let](Assets-Images/ch14-var-vs-let-scope.png)
+
 ### 03: The JavaScript Engine
 
 **Concept:** Node.js uses the V8 JavaScript engine. V8 parses and compiles JavaScript, runs it, and can optimize frequently executed code while the program is running. This is just-in-time (JIT) compilation.
@@ -628,6 +646,8 @@ The lessons in `04_Chapter_JS_Operators/` introduce assignment, arithmetic, comp
 
 ![Ternary operator decision flow](Assets-Images/ch04-ternary.png)
 
+![JavaScript operators overview](Assets-Images/ch04-operators.png)
+
 ## Chapter 05: Increment, Decrement, and Nullish Operators
 
 The lessons in `05_Chapter_JS_inrdcr_Operators/` cover prefix and postfix increment/decrement, their results inside expressions, and nullish coalescing with `??`.
@@ -640,11 +660,15 @@ The lessons in `06_Chapter_If-Else_Conditions/` introduce branching with `if`, `
 
 ![If-Else ladder flow](Assets-Images/ch06-else-if-ladder.png)
 
+![If-else decision flow](Assets-Images/ch06-if-else.png)
+
 ## Chapter 07: Switch Statement
 
 The lessons in `07_Chapter_Switch_Statement/` cover `switch` and `case`, `break`, grouped cases, strict matching, and routing API status codes.
 
 ![Switch case flow and break](Assets-Images/ch07-switch-break.png)
+
+![Switch statement overview](Assets-Images/ch07-switch.png)
 
 ## Chapter 08: User Input
 
@@ -658,11 +682,15 @@ The lessons in `09_Chapter_Loops/` introduce the `for` loop's initialization, co
 
 ![For loop structure](Assets-Images/ch09-for-loop-anatomy.png)
 
+![For loop examples](Assets-Images/ch09-Loops.png)
+
 ## Chapter 10: While Loops
 
 The lessons in `10_Chapter_Loops_While/` cover `while` loops, where the condition is checked before each iteration, with practice questions.
 
 ![While loop flow](Assets-Images/ch10-while-loop.png)
+
+![While loop examples](Assets-Images/ch10-while-loop1.png)
 
 ## Chapter 11: Do-While Loops
 
@@ -683,6 +711,18 @@ The lessons in `12_Chapter_Arrays/` cover array creation, indexing, length, modi
 ![Sorting strings and numbers](Assets-Images/ch12-sort-text-vs-numbers.png)
 
 ![JavaScript map and filter comparison infographic](Assets-Images/JavaScript%20map%20vs%20filter%20Infographic.png)
+
+![JavaScript arrays overview](Assets-Images/ch12-arrays.png)
+
+## Chapter 13: Functions
+
+The function visuals cover common function types, declaration styles, and syntax forms.
+
+![JavaScript functions overview](Assets-Images/ch13-functions.png)
+
+![JavaScript function types](Assets-Images/ch13-function-types.png)
+
+![Three JavaScript function syntaxes](Assets-Images/ch13-three-syntaxes.png)
 
 ## Practice Tasks
 
