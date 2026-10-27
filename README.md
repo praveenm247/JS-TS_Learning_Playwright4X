@@ -31,6 +31,7 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 - [Chapter 11: Do-While Loops](#chapter-11-do-while-loops)
 - [Chapter 12: Arrays](#chapter-12-arrays)
 - [Chapter 13: Functions](#chapter-13-functions)
+- [Chapter 14: `var`, `let`, `const`, Hoisting, and TDZ](#chapter-14-var-let-const-hoisting-and-tdz)
 - [Practice Tasks](#practice-tasks)
 - [Coming Up](#coming-up)
 
@@ -58,6 +59,8 @@ A chapter-by-chapter learning repo for testers moving into JavaScript, TypeScrip
 | 10 | While Loops | `10_Chapter_Loops_While/` | ✅ Done | `while` loop structure, condition checks, and practice questions |
 | 11 | Do-While Loops | `11_Chapter_DoWhile/` | ✅ Done | `do...while`, running a loop body before checking its condition, and nested loops |
 | 12 | Arrays | `12_Chapter_Arrays/` | ✅ Done | Creating, accessing, changing, searching, sorting, and iterating arrays; `map()` and `filter()` |
+| 13 | Functions | `13_Chapter_Functions/` | ✅ Done | Function declarations, parameters, return values, expressions, arrow functions, and callbacks |
+| 14 | `var`, `let`, `const`, Hoisting, and TDZ | `14_chapter_Var_Let_Const_Hoisting_TDZ/` | ✅ Done | Variable declarations, scope, hoisting, and the temporal dead zone (TDZ) |
 
 ## Chapter Flow and Quick Examples
 
@@ -78,7 +81,8 @@ flowchart LR
     C10 --> C11["11 Do-While Loops"]
     C11 --> C12["12 Arrays"]
     C12 --> C13["13 Functions"]
-    C13 --> TS[TypeScript]
+    C13 --> C14["14 var, let, const, hoisting, and TDZ"]
+    C14 --> TS[TypeScript]
     TS --> PW[Playwright]
 ```
 
@@ -225,6 +229,20 @@ console.log(greet("QA"));
 
 Functions package reusable steps, accept inputs, and can return a result.
 
+### Chapter 14: `var`, `let`, `const`, Hoisting, and TDZ
+
+```js
+if (true) {
+  var functionScoped = "visible outside this block";
+  let blockScoped = "visible only inside this block";
+}
+
+console.log(functionScoped);
+// console.log(blockScoped); // ReferenceError: blockScoped is not defined
+```
+
+This chapter compares declaration scope and explains how hoisting and the temporal dead zone affect access to variables.
+
 ## Image Syntax
 
 Use Markdown image syntax with descriptive alt text and a path relative to the repository:
@@ -342,25 +360,57 @@ JS-TS_Learning_Playwright4X/
 │   ├── 86_findelement_array.js             # find and findIndex methods
 │   ├── 87_iterate_array.js                 # Iterate and transform arrays
 │   └── 88_trans_array.js                   # map and filter transformations
+├── 13_Chapter_Functions/
+│   ├── 101_function.js                     # Define and call a function
+│   ├── 102_type1_function.js               # Function without parameters or return value
+│   ├── 103_type2_function.js               # Function with parameters
+│   ├── 104_type3_function.js               # Function with a return value
+│   ├── 105_type4_function.js               # Function with parameters and return value
+│   ├── 106_expression_function.js          # Function expression
+│   ├── 107_arrow_function.js               # Arrow function examples
+│   ├── 108_arrow_function.js               # Arrow function examples
+│   ├── 109_arrowmulstatements_function.js   # Multi-statement arrow function
+│   ├── 110_function.js                     # Function examples
+│   ├── 111_real_function.js                # Practical function example
+│   ├── 112_calleditself_function.js        # Self-calling function
+│   ├── 113_spreadinfunction.js             # Spread syntax in functions
+│   ├── 114_returnfunction.js               # Returning a function value
+│   └── 115_returnfunction.js               # Return value example
+├── 14_chapter_Var_Let_Const_Hoisting_TDZ/
+│   ├── 116_var-let-const.js                # Variable declarations
+│   ├── 117_var.js                           # var behavior and scope
+│   ├── 118_let.js                           # let behavior and scope
+│   └── 119_const.js                         # const behavior
 ├── Assets-Images/
 │   ├── banner.png
 │   ├── ch00-rice-pot.png
 │   ├── ch01-node-runs-file.png
+│   ├── ch02-data types.png
 │   ├── ch02-declaration-anatomy.png
 │   ├── ch03-null-vs-undefined.png
 │   ├── ch04-loose-vs-strict.png
+│   ├── ch04-operators.png
 │   ├── ch04-ternary.png
 │   ├── ch05-pre-vs-post.png
 │   ├── ch06-else-if-ladder.png
+│   ├── ch06-if-else.png
+│   ├── ch07-switch.png
 │   ├── ch07-switch-break.png
 │   ├── ch08-user-input.png
 │   ├── ch09-for-loop-anatomy.png
+│   ├── ch09-Loops.png
 │   ├── ch10-while-loop.png
+│   ├── ch10-while-loop1.png
 │   ├── ch11-while-vs-do-while.png
 │   ├── ch12-array-add-remove.png
+│   ├── ch12-arrays.png
 │   ├── ch12-copy-vs-reference.png
 │   ├── ch12-map-vs-filter.png
 │   ├── ch12-sort-text-vs-numbers.png
+│   ├── ch13-functions.png
+│   ├── ch13-function-types.png
+│   ├── ch13-three-syntaxes.png
+│   ├── ch14-var-vs-let-scope.png
 │   └── JavaScript map vs filter Infographic.png
 └── Tasks/
     ├── hello_14-10.js                     # Hello World exercise
@@ -489,8 +539,6 @@ console.log("Modulus: " + (5 % 3));
 ![JavaScript declaration anatomy](Assets-Images/ch02-declaration-anatomy.png)
 
 ![JavaScript data types](Assets-Images/ch02-data%20types.png)
-
-![Variable scope with var and let](Assets-Images/ch14-var-vs-let-scope.png)
 
 ### 03: The JavaScript Engine
 
@@ -716,13 +764,19 @@ The lessons in `12_Chapter_Arrays/` cover array creation, indexing, length, modi
 
 ## Chapter 13: Functions
 
-The function visuals cover common function types, declaration styles, and syntax forms.
+The lessons in `13_Chapter_Functions/` cover function declarations, parameters, return values, function expressions, arrow functions, and callbacks. The visuals show common function types and syntax forms.
 
 ![JavaScript functions overview](Assets-Images/ch13-functions.png)
 
 ![JavaScript function types](Assets-Images/ch13-function-types.png)
 
 ![Three JavaScript function syntaxes](Assets-Images/ch13-three-syntaxes.png)
+
+## Chapter 14: `var`, `let`, `const`, Hoisting, and TDZ
+
+The lessons in `14_chapter_Var_Let_Const_Hoisting_TDZ/` compare variable declarations and their scope, hoisting, and temporal dead zone behavior.
+
+![Variable scope with var and let](Assets-Images/ch14-var-vs-let-scope.png)
 
 ## Practice Tasks
 
